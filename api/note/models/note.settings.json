@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notes",
+  "info": {
+    "name": "note",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "noteByRole": {
+      "plugin": "users-permissions",
+      "model": "role"
+    },
+    "noteToRole": {
+      "plugin": "users-permissions",
+      "model": "role"
+    },
+    "order": {
+      "via": "notes",
+      "model": "orders"
+    },
+    "textNote": {
+      "type": "string"
+    }
+  }
+}

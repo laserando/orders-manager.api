@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "orders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "clientIndications": {
+      "type": "text"
+    },
+    "deliveryDate": {
+      "type": "date"
+    },
+    "typeOfWork": {
+      "type": "string"
+    },
+    "itemSize": {
+      "type": "string"
+    },
+    "tags": {
+      "collection": "tags"
+    },
+    "role": {
+      "plugin": "users-permissions",
+      "model": "role"
+    },
+    "typesOfProcessing": {
+      "model": "type-of-processing"
+    },
+    "typesOfMaterial": {
+      "model": "materials"
+    },
+    "isCompleted": {
+      "type": "boolean",
+      "default": false
+    },
+    "logs": {
+      "via": "order",
+      "collection": "log"
+    },
+    "isArchived": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "notes": {
+      "via": "order",
+      "collection": "note"
+    },
+    "client": {
+      "via": "orders",
+      "model": "clients"
+    }
+  }
+}

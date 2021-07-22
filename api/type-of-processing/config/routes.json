@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/type-of-processings",
+      "handler": "type-of-processing.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/type-of-processings/count",
+      "handler": "type-of-processing.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/type-of-processings/:id",
+      "handler": "type-of-processing.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/type-of-processings",
+      "handler": "type-of-processing.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/type-of-processings/:id",
+      "handler": "type-of-processing.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/type-of-processings/:id",
+      "handler": "type-of-processing.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

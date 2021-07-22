@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "name": "clients",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "businessName": {
+      "type": "string"
+    },
+    "piva": {
+      "type": "string"
+    },
+    "billingAddress": {
+      "type": "string"
+    },
+    "sdi": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "cellphoneNumber": {
+      "type": "integer"
+    },
+    "orders": {
+      "via": "client",
+      "collection": "orders"
+    },
+    "shippingAddress": {
+      "type": "string"
+    },
+    "cf": {
+      "type": "string"
+    },
+    "isBusiness": {
+      "type": "boolean"
+    },
+    "graphicLink": {
+      "type": "string"
+    }
+  }
+}

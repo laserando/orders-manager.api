@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logs",
+  "info": {
+    "name": "log",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "oldRole": {
+      "plugin": "users-permissions",
+      "model": "role"
+    },
+    "newRole": {
+      "plugin": "users-permissions",
+      "model": "role"
+    },
+    "order": {
+      "via": "logs",
+      "model": "orders"
+    }
+  }
+}
